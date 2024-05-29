@@ -20,8 +20,8 @@ public class A_EnumEjemploDias {
 		A_DiasDeLaSemana dia;
 		String ingresoDatos;
 
-		// Realizar alguna lógica basada en el día de la semana
-		System.out.print("Ingrese un día de la semana: ");
+		// Realizar alguna logica basada en el dï¿½a de la semana
+		System.out.print("Ingrese un dia de la semana: ");
 		ingresoDatos = entrada.nextLine().toUpperCase();
 		// toUpperCase() sirve para pasar todo a mayusculas. Ya que los datos en enum
 		// estan en mayusculas.
@@ -34,11 +34,13 @@ public class A_EnumEjemploDias {
 		case MIERCOLES:
 		case JUEVES:
 		case VIERNES:
-			System.out.println("Es un día laboral.");
+			System.out.println("El dia "+dia.name().toLowerCase()+" es un dia laboral.");
+			// el mÃ©todo name() transforma el ENUM a STRING. 
+			// toLowerCase() transforma el STRING a minusculas.
 			break;
 		case SABADO:
 		case DOMINGO:
-			System.out.println("Es fin de semana.");
+			System.out.println("El dia "+dia.name().toLowerCase()+" es fin de semana.");
 			break;
 		}
 
