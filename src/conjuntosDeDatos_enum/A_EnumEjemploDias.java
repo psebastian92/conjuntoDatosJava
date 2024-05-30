@@ -27,7 +27,8 @@ public class A_EnumEjemploDias {
 		// estan en mayusculas.
 
 		dia = A_DiasDeLaSemana.valueOf(ingresoDatos);
-
+		// valueOf sirve para convertir el string en una constante del ENUM.
+		
 		switch (dia) {
 		case LUNES:
 		case MARTES:

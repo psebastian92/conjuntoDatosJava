@@ -8,7 +8,7 @@
 
 package conjuntosDeDatos_enum;
 
-// Si bien Java nos permite colocar minúsculas y mayúsculas, los enums deben coloarse en MAYÚSCULAS.
+// Si bien Java nos permite colocar minusculas y mayusculas, los enums deben coloarse en MAYUSCULAS.
 public enum A_DiasDeLaSemana {
 	LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO
 }
