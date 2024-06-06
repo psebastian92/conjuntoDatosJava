@@ -1,8 +1,8 @@
 package conjuntosDeDatos_listas;
 
-/* En resumen, ArrayList es como una caja específica que puede cambiar de tamaño según 
+/* En resumen, ArrayList es como una caja especï¿½fica que puede cambiar de tamaï¿½o segï¿½n 
  * lo que guardes dentro, mientras que List es como un conjunto de instrucciones que te dice 
- * cómo usar cualquier tipo de caja que pueda guardar cosas.*/
+ * cï¿½mo usar cualquier tipo de caja que pueda guardar cosas.*/
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class ListasEjemploPorUsuario {
 	  public static void main(String[] args) {
-	        // Creamos una lista vacía
+	        // Creamos una lista vacï¿½a
 	        List<String> lista = new ArrayList<>();
 	        
 	        // Creamos un objeto Scanner para leer la entrada del usuario
@@ -20,6 +20,7 @@ public class ListasEjemploPorUsuario {
 	        
 	        System.out.println("Ingrese elementos a la lista (escriba 'fin' para terminar):");
 	        String entrada = scanner.nextLine();
+	        
 	        while (!entrada.equalsIgnoreCase("fin")) {
 	            lista.add(entrada);
 	            entrada = scanner.nextLine();
@@ -30,6 +31,7 @@ public class ListasEjemploPorUsuario {
 	        for (String elemento : lista) {
 	            System.out.println(elemento);
 	        }
+	        System.out.println("Cantidad de elementos: "+lista.size());
 
 	        // Cerramos el scanner
 	        scanner.close();
