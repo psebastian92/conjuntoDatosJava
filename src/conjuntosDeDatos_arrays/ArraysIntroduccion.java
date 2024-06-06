@@ -48,6 +48,8 @@ public class ArraysIntroduccion {
 		int[] RiverPlate = new int[3]; /* en este caso, 3 es el número de elementos. Acordate que primero SE DEFINEN los arreglos.
 										A mi se me ocurrió llamarlo "RiverPlate" */
 		
+		//	Una forma de darle valores por programa: int RiverPlate[] = {6,11,15};
+		
 		RiverPlate[0] = 6; // [0] es la primera posición
 		RiverPlate[1] = 11; // [1] es la segunda posición
 		RiverPlate[2] = 15; // [2] es la tercera posición
