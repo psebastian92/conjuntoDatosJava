@@ -2,7 +2,7 @@ package conjuntosDeDatos_arrays;
 
 import java.util.Scanner;
 
-public class buscar_elemento_arrays {
+public class buscar_numeros_arrays {
 	public static void main(String[] args) {
 		int[] codigos = { 89713, 12384, 55612, 34123, 80921 };
 
@@ -19,9 +19,16 @@ public class buscar_elemento_arrays {
 			}
 		}
 
+		/* OTRA FORMA DE REALIZAR LA BUSQUEDA
+		 * for (int i = 0; i < codigos.length; i++) { 
+		 * if (codigoBuscado == codigos[i]) {
+		 * encontrado = true; break; } 
+		 * }
+		 */
+
 		if (encontrado == true) {
 			System.out.println("Sí, el código ingresado está en la lista.");
-			System.out.println("El codigo es: "+codigoBuscado);
+			System.out.println("El codigo es: " + codigoBuscado);
 		} else {
 			System.out.println("No se encuentra el código ingresado.");
 		}
