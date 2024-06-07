@@ -1,10 +1,12 @@
 package conjuntosDeDatos_listas;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /* En resumen, ArrayList es como una caja espec�fica que puede cambiar de tama�o seg�n 
  * lo que guardes dentro, mientras que List es como un conjunto de instrucciones que te dice 
  * c�mo usar cualquier tipo de caja que pueda guardar cosas.*/
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class ListasEjemploPorPrograma {
 

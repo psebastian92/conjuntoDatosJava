@@ -21,7 +21,7 @@ public class ListasEjemploPorUsuario {
 	        System.out.println("Ingrese elementos a la lista (escriba 'fin' para terminar):");
 	        String entrada = scanner.nextLine();
 	        
-	        while (!entrada.equalsIgnoreCase("fin")) {
+	        while (!entrada.equalsIgnoreCase("fin") ) { 
 	            lista.add(entrada);
 	            entrada = scanner.nextLine();
 	        }

@@ -33,6 +33,11 @@ public class ListasMetodos {
         System.out.println(primeraFruta); //  Manzana
         
         // METODO REMOVE:ELIMINAR ELEMENTOS DE UNA LISTA -> nombreDeLaLista.remove()
+        /* IMPORTANTE: al aplicar el metodo REMOVE, la lista se reordena
+         *  Ejemplo: Tengo Manzana(0), Banana(1), Cereza(2) y Pera(3). 
+         *  Si borro Banana, que esta en la posicion 1, Cereza ira a la posicion 1, 
+         *  y pera a la posicion 2.
+         * */
         System.out.println("----------------");
         System.err.println("METODO REMOVE");
         frutas.remove("Banana");
@@ -60,7 +65,7 @@ public class ListasMetodos {
         // METODO SET: asignar un valor a un determinado indice de la lista.
         System.out.println("----------------");
         System.err.println("METODO SET");
-        frutas.set(1, "Mango");  // Modificar el segundo elemento (índice 1)
+        frutas.set(1, "Mango");  // Modificar el segundo elemento (indice 1)
         System.out.println(frutas);
         
         // METODO CLEAR: VACIAR LA LISTA -> nombreDeLaLista.clear()

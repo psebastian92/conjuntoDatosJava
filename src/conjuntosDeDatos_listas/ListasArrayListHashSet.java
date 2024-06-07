@@ -3,6 +3,7 @@
 package conjuntosDeDatos_listas;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 
 public class ListasArrayListHashSet {
@@ -29,8 +30,10 @@ public class ListasArrayListHashSet {
 		numeros.addAll(set);
 
 		// Paso 5: Imprimir la lista sin duplicados
+		Collections.sort(numeros);
 		System.out.println("Lista sin duplicados: " + numeros);
-
+		
+	
 	}
 
 }
