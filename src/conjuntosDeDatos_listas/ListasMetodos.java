@@ -49,6 +49,13 @@ public class ListasMetodos {
         boolean contieneManzana = frutas.contains("Manzana");
         System.out.println("Existe el elemento Manzana? "+contieneManzana); // En pantalla: true
         
+        // METODO INDEXOF: SEGÚN UN ELEMENTO DADO, BUSCAR SU ÍNDICE.
+        System.out.println("----------------");
+        System.err.println("METODO INDEX OF");
+        int posicionEnLaLista = frutas.indexOf("Manzana");
+        System.out.println("El elemento manzana esta en la posicion: "+posicionEnLaLista); // En pantalla: true
+        System.out.println("Corroboramos la posicion del elemento seleccionado" + frutas);
+        
         // METODO SIZE: OBTENER LA CANTIDAD DE ELEMENTOS DE LA LISTA -> nombreDeLaLista.size()
         System.out.println("----------------");
         System.err.println("METODO SIZE");
