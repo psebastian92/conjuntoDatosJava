@@ -32,29 +32,58 @@ public class ListasMetodos {
         String primeraFruta = frutas.get(0); // Al igual que en un array, las listas comienzan de 0.
         System.out.println(primeraFruta); //  Manzana
         
-        // METODO REMOVE:ELIMINAR ELEMENTOS DE UNA LISTA -> nombreDeLaLista.remove()
+        // METODO INDEXOF: SEGï¿½N UN ELEMENTO DADO, BUSCAR SU ï¿½NDICE.
+        System.out.println("----------------");
+        System.err.println("METODO INDEX OF");
+        int posicionEnLaLista = frutas.indexOf("Manzana");
+        System.out.println("El elemento manzana esta en la posicion: "+posicionEnLaLista); // En pantalla: true
+        System.out.println("Corroboramos la posicion del elemento seleccionado" + frutas);
+        
+        // METODO REMOVE (CON STRINGS) :ELIMINAR ELEMENTOS DE UNA LISTA -> nombreDeLaLista.remove()
         /* IMPORTANTE: al aplicar el metodo REMOVE, la lista se reordena
          *  Ejemplo: Tengo Manzana(0), Banana(1), Cereza(2) y Pera(3). 
          *  Si borro Banana, que esta en la posicion 1, Cereza ira a la posicion 1, 
          *  y pera a la posicion 2.
          * */
         System.out.println("----------------");
-        System.err.println("METODO REMOVE");
+        System.err.println("METODO REMOVE (con String especifico)");
         frutas.remove("Banana");
         System.out.println(frutas); // En pantalla: [Cereza, Manzana]
+        
+        
+        // METODO REMOVE (POR INDICE) :ELIMINAR ELEMENTOS DE UNA LISTA -> nombreDeLaLista.remove()
+        /* IMPORTANTE: al aplicar el metodo REMOVE, la lista se reordena
+         *  Ejemplo: Tengo Manzana(0), Banana(1), Cereza(2) y Pera(3). 
+         *  Si borro Banana, que esta en la posicion 1, Cereza ira a la posicion 1, 
+         *  y pera a la posicion 2.
+         * */
+        System.out.println("----------------");
+        System.err.println("METODO REMOVE (por indice).");
+        frutas.remove(1); // Recordar que tenÃ­amos  [Cereza, Manzana], por ende, ahora se borra Manzana (indice 1).
+        System.out.println(frutas); // En pantalla: [Cereza]
+        /* IMPORTANTE: podemos combinar el metodo index of con el metodo remove, en caso de querer buscar un elemento especifico.
+        
+        Ejemplo:
+          System.out.println("Que elemento desea borrar?");
+        
+          String elementoABorrar = entrada.next(); Ingresamos el elemento "Manzana", por ejemplo.
+        
+          int posicionEnLaLista = frutas.indexOf(elementoABorrar);
+        
+          frutas.remote(posicionEnLaLista);
+          
+          Lo que se hace, es pedirle al usuario un elemento de la lista. Se almacena, se busca la posicion de ese elemento,
+          se guarda la posicion, y luego se borra el elemento en dicha posicion.
+        */
+        
+        // VUELVO A AGREGAR "Manzana", SOLO PARA UTILIZAR LOS METODOS SIGUIENTES
+        frutas.add("Manzana");
         
         // METODO CONTAINS: VERIFICAR SI EXISTE EXACTAMENTE UN ELEMENTO DE LA LISTA PARTICULAR
         System.out.println("----------------");
         System.err.println("METODO CONTAINS");
         boolean contieneManzana = frutas.contains("Manzana");
         System.out.println("Existe el elemento Manzana? "+contieneManzana); // En pantalla: true
-        
-        // METODO INDEXOF: SEGÚN UN ELEMENTO DADO, BUSCAR SU ÍNDICE.
-        System.out.println("----------------");
-        System.err.println("METODO INDEX OF");
-        int posicionEnLaLista = frutas.indexOf("Manzana");
-        System.out.println("El elemento manzana esta en la posicion: "+posicionEnLaLista); // En pantalla: true
-        System.out.println("Corroboramos la posicion del elemento seleccionado" + frutas);
         
         // METODO SIZE: OBTENER LA CANTIDAD DE ELEMENTOS DE LA LISTA -> nombreDeLaLista.size()
         System.out.println("----------------");
