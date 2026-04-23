@@ -70,7 +70,7 @@ public class ListasMetodos {
         
           int posicionEnLaLista = frutas.indexOf(elementoABorrar);
         
-          frutas.remote(posicionEnLaLista);
+          frutas.remove(posicionEnLaLista);
           
           Lo que se hace, es pedirle al usuario un elemento de la lista. Se almacena, se busca la posicion de ese elemento,
           se guarda la posicion, y luego se borra el elemento en dicha posicion.
